@@ -1,0 +1,53 @@
+GIT
+  remote: git://github.com/defeed/spotlite.git
+  revision: 5de3a86ee00b178fbb0b897887b0637a7d1b6f71
+  branch: v1
+  specs:
+    spotlite (1.0.0)
+      httparty
+      nokogiri (~> 1.8.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    daemons (1.2.6)
+    eventmachine (1.2.7)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    mini_portile2 (2.3.0)
+    multi_xml (0.6.0)
+    mustermann (1.0.2)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    rack (2.0.5)
+    rack-protection (2.0.1)
+      rack
+    sinatra (2.0.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.1)
+      tilt (~> 2.0)
+    temple (0.8.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  sinatra
+  spotlite (~> 1.0.0)!
+  thin
+
+RUBY VERSION
+   ruby 2.5.1p57
+
+BUNDLED WITH
+   1.16.2
