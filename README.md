@@ -58,3 +58,6 @@ http://localhost:3000/movies/0076759/crew
 
 #### All credits (cast + crew members)
 http://localhost:3000/movies/0076759/credits
+
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/defeed/spotlite_proxy&env[PORT]=8080)

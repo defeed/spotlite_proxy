@@ -1,0 +1,6 @@
+{
+  "name": "Spotlite Proxy",
+  "description": "A lightweight Sinatra app that utilizes spotlite gem to fetch movie information and return it in JSON format",
+  "repository": "https://github.com/defeed/spotlite_proxy",
+  "keywords": ["ruby", "sinatra", "imdb", "json"]
+}
