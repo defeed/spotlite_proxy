@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/defeed/spotlite.git
-  revision: 5de3a86ee00b178fbb0b897887b0637a7d1b6f71
+  revision: f07f28ac6cc1104260167841bab7491460e82499
   branch: v1
   specs:
     spotlite (1.0.0)

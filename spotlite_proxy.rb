@@ -7,6 +7,30 @@ class SpotliteProxy < Sinatra::Base
     { success: true }.to_json
   end
 
+  get "/movies/search" do
+    total_results = 10000
+    per_page = 250
+    pages = total_results / per_page
+    page = params[:page].to_i
+    page = 1 if page < 1
+    page = pages if page > pages
+    movies = []
+
+    Spotlite::Movie.search(page: page).each do |m|
+      movies << {
+        imdb_id: m.imdb_id,
+        title: m.title,
+        year: m.year
+      }
+    end
+
+    {
+      page: page,
+      pages: pages,
+      movies: movies
+    }.to_json
+  end
+
   get "/movies/:imdb_id" do
     m = Spotlite::Movie.new(params[:imdb_id])
 
