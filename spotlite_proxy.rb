@@ -145,4 +145,18 @@ class SpotliteProxy < Sinatra::Base
       credits: m.credits
     }.to_json
   end
+
+  get "/people/:imdb_id" do
+    p = Spotlite::Person.new(params[:imdb_id])
+
+    {
+      imdb_id: p.imdb_id,
+      name: p.name,
+      birth_name: p.birth_name,
+      birth_date: p.birth_date,
+      birth_place: p.birth_place,
+      death_place: p.death_place,
+      photo_url: p.photo_url
+    }.to_json
+  end
 end
