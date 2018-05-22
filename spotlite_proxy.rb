@@ -7,7 +7,7 @@ class SpotliteProxy < Sinatra::Base
     { success: true }.to_json
   end
 
-  get "/movies/search" do
+  get "/movies" do
     total_results = 10000
     per_page = 250
     pages = total_results / per_page
