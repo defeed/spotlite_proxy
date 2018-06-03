@@ -60,7 +60,7 @@ class SpotliteProxy < Sinatra::Base
     {
       imdb_id: m.imdb_id,
       release_date: m.release_date,
-      relase_dates: m.release_dates,
+      release_dates: m.release_dates,
       alternative_titles: m.alternative_titles
     }.to_json
   end
