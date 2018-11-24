@@ -12,9 +12,6 @@ GEM
   specs:
     daemons (1.2.6)
     eventmachine (1.2.7)
-    haml (5.0.4)
-      temple (>= 0.8.0)
-      tilt
     httparty (0.16.3)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -34,7 +31,6 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.4)
       tilt (~> 2.0)
-    temple (0.8.0)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -45,7 +41,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml
   sinatra
   spotlite (~> 1.0.0)!
   thin
