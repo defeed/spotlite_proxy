@@ -16,12 +16,20 @@ class SpotliteProxy < Sinatra::Base
     page = pages if page > pages
     movies = []
 
-    Spotlite::Movie.search(page: page).each do |m|
-      movies << {
-        imdb_id: m.imdb_id,
-        title: m.title,
-        year: m.year
-      }
+    opts = { page: page }
+    opts[:genres] = params[:genres]
+    opts[:countries] = params[:countries]
+    opts[:keywords] = params[:keywords]
+    opts[:release_date] = params[:release_date]
+    opts[:user_rating] = params[:user_rating]
+    opts[:num_votes] = params[:num_votes]
+
+    opts = opts.reject { |k,v| v.to_s.length == 0 }
+
+    puts opts
+
+    Spotlite::Movie.search(opts).each do |m|
+      movies << { imdb_id: m.imdb_id, title: m.title, year: m.year }
     end
 
     {
