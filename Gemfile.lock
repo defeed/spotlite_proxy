@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/defeed/spotlite.git
-  revision: a21cebc67150754736834a0df7be8031815cfee0
+  revision: a0c970ccb5704250fae8163e1228ed98f214fe9f
   branch: v1
   specs:
     spotlite (1.0.0)
@@ -12,7 +12,7 @@ GEM
   specs:
     daemons (1.2.6)
     eventmachine (1.2.7)
-    httparty (0.16.3)
+    httparty (0.16.4)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     mime-types (3.2.2)
